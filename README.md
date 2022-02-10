@@ -1,8 +1,8 @@
-# Python Behave: Tests Project Template
+# Python Behave: Tests Project Template
 
 This repository aims to provides a template and a cheat sheet for tests project using python behave.
 
-## Dependencies
+## Dependencies
 
 ```bash
 # Install from the github to get the lastest cool features
@@ -16,7 +16,7 @@ pip install behave-html-formatter
 - Write your features in the **features** directory
 - Write your python steps in the **steps** directory (DO NOT REMOVE **xdocz_helpers.py** USE IT !!!)
 
-Features and steps can be split in multiple files.
+Features and steps can be splitted in multiple files.
 
 ```bash
 # just run the command behave
