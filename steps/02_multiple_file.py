@@ -1,22 +1,20 @@
+import os
 from behave import *
 
 ###############################################################################
 ###############################################################################
 
-@given('we have behave installed')
-def step_impl(context):
-    # WARNING "\n" is required
-    print("print visible", "\n")
+# Required to parse arguments in steps, for example "{thing}"
+use_step_matcher("parse")
 
 ###############################################################################
 ###############################################################################
 
-@when('we implement a test')
-def step_impl(context):
-    context.attach("text/plain", "je suis un log")
-    assert True is not False
+@when('we join the filename "{file}" to the directory path')
+def foo_1(context, file):
+    # Create the file path using the path provided by the first step
+    context.filepath = os.path.join(context.cwd, file)
 
 ###############################################################################
 ###############################################################################
-
 
