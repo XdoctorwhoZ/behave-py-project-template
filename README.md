@@ -2,6 +2,8 @@
 
 This repository aims to provides a template and a cheat sheet for tests project using python behave.
 
+This tutorial is only an enter point into behave framework. More information in the [Behave Documentation](https://behave.readthedocs.io)
+
 ## Dependencies
 
 ```bash
@@ -134,4 +136,16 @@ def foo_1(context, file):
 ```
 
 **Warning** The scenario will be entirely run for each line of the table
+
+
+## 03 Attach Image and more context usage
+
+In the file **environment.py**, there is an example of the function *before_all*.
+This function will help you to pass data to your steps, like global constants.
+
+```python
+def before_all(context):
+    context.IMAGE_NAME = "test.png"
+```
+
 

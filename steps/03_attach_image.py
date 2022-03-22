@@ -13,7 +13,7 @@ use_step_matcher("parse")
 
 @Given('an image in the rsc directory')
 def step(context):
-    context.path = PathToRsc("test.png")
+    context.path = PathToRsc(context.IMAGE_NAME)
     AttachTextLog(context, f"Path: {context.path}")
 
 ###############################################################################
