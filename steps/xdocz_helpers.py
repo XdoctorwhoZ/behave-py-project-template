@@ -1,3 +1,4 @@
+import os
 import base64
 
 COLOR_LOG='\033[93m'
@@ -32,3 +33,8 @@ def AttachPngImage(context, img_filepath):
 ###############################################################################
 ###############################################################################
 
+def PathToRsc(rsc_name):
+    """ 
+    """
+    return os.path.join(os.getcwd(), "rsc", rsc_name)
+   
