@@ -36,5 +36,5 @@ def AttachPngImage(context, img_filepath):
 def PathToRsc(rsc_name):
     """ 
     """
-    return os.path.join(os.getcwd(), "rsc", rsc_name)
+    return os.path.join(os.getcwd(), "features", "rsc", rsc_name)
    
